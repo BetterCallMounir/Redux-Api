@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: 'true'
+  datasource:
+    password: redux
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: redux
+    url: jdbc:mariadb://localhost:3306/redux
+  sql:
+    init:
+      mode: always
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    username: 9daf9faff5a1ab
+    protocol: smtp
+    port: '2525'
+    password: e3440171ae670d
+  jwt:
+    secret: secretkey
+    expirationMs: 86400000
